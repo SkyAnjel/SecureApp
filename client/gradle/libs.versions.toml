@@ -1,0 +1,31 @@
+[versions]
+agp = "8.9.1"
+biometric = "1.2.0-alpha05"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+loggingInterceptor = "4.12.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+securityCrypto = "1.1.0-alpha07"
+squareupRetrofitVersion = "2.9.0"
+
+[libraries]
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometric" }
+com-squareup-retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "squareupRetrofitVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "squareupRetrofitVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
